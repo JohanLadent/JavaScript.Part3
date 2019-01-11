@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <div><label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" /></div>
+    <div><label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" /></div>
+    <div><input type="submit" name="submit" id="submit" value="Varification" /></div>
+  </form>
+  <script src="Exercice4.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  document.querySelector("#submit").onclick = function(e)
+  {
+    e.preventDefault();
+    changeBorder();
+  }
+  </script>
+</body>
+</html>
+
+
+<!-- var elemnt = document.getElementById('submit');
+elemnt.addEventListener('click', function(e){
+ e.preventDefault();
+ inputBorder();
+ }); -->
